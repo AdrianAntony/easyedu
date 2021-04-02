@@ -70,6 +70,9 @@ label{
   
   
 }  
+#upload_button{
+    color: black;
+}
 #active{
   background-color: #5575af;
   color: white;
@@ -157,25 +160,25 @@ a{
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item" id="active">
                             <img src="/home/adrian/Downloads/Telegram Desktop/easyedu/img/complaints.png" alt="Icon">
-                            <h2><a href="#" >Register Grievance</a></h2>
+                            <h2><a href="/home/adrian/Downloads/Telegram Desktop/easyedu/complaints.html" >Register Grievance</a></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
                             <img src="/home/adrian/Downloads/Telegram Desktop/easyedu/img/Leave-request.png" alt="Icon">
-                            <h2><a href="#">Upload Leave Request</a></h2>
+                            <h2><a href="/home/adrian/Downloads/Telegram Desktop/easyedu/leaverequest.html">Upload Leave Request</a></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
                             <img src="/home/adrian/Downloads/Telegram Desktop/easyedu/img/certificate.png" alt="Icon">
-                            <h2><a href="#" >Upload Certificate</a></h2>
+                            <h2><a href="/home/adrian/Downloads/Telegram Desktop/easyedu/certificate.html" >Upload Certificate</a></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
                             <img src="/home/adrian/Downloads/Telegram Desktop/easyedu/img/assignment.png" alt="Icon">
-                            <h2><a href="#" >Assignment & Home Works</a></h2>
+                            <h2><a href="/home/adrian/Downloads/Telegram Desktop/easyedu/assignment.html" >Assignment & Home Works</a></h2>
                         </div>
                     </div>
                 </div>
@@ -191,12 +194,17 @@ a{
                     <h2>Register Grievance</h2>
 
                 <div class="login">    
-                    <form id="login" method="get">    
+                    <form id="login" method="get" action="/action_page.php">    
                         <label><b>Your Name:    
                         </b>    
                         </label>    
                         <input type="text" name="Uname" id="Uname" placeholder="Full Name" />  
-                        <br><br>         
+                        <br><br> 
+                        <label><b>Admission No:    
+                        </b>    
+                        </label>    
+                        <input type="text" name="Uname" id="Uname" placeholder="Admission Number" />  
+                        <br><br>                
                         <label><b>Email ID:    
                         </b>    
                         </label> 
@@ -217,10 +225,12 @@ a{
                         </b>    
                         </label> 
                        
-                        <input id="query" type="text" id="Uname" placeholder="Write here . ." />
- 
-                        <br><br>    
-                        <input type="button" name="log" id="send" value="Send your query">       
+                        <input id="query" type="text" id="Uname" placeholder="Write here . ." />  
+                        <label>OR</label>
+                        <input type="file" id="upload_button" name="filename">
+                        <br><br>
+                        <input type="button" name="log" id="send" value="Submit"> 
+                    </form> 
                         
                   </div>    
             </div>
