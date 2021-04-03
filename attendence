@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EasyEDU</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Easy EDU" name="keywords">
+        <meta content="Easy EDU" name="description">
+        <link rel="icon" href="/home/adrian/Downloads/Telegram Desktop/easyedu/img/logo.png" type="image/icon type">
+        
+        <!-- Favicon -->
+        <link href="img/" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        
+
+        
+        
+
+        <style>
+            /********top bar style********/
+
+  .top-bar {
+    position: relative;
+    height: 35px;
+    background-image: linear-gradient(to right, #0796fe, #092a49);
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.top-bar .text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .15);
+    color: #eeeeee;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*************nav bar style***************/
+
+.navbar {
+    position:relative;
+    transition: .5s;
+    z-index: 999;
+    background-color: #092a49 !important;
+    text-transform: uppercase;
+}
+
+
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 200;
+    text-transform: none;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #0796fe;
+    transition: none;
+}
+/* footer style */
+
+.footer{
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+    background-color: #092a49;
+    width:100%;
+    text-align: center;
+    margin-bottom:0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.footer h2{
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-bottom:2px solid #0796fe;
+    border-bottom-width: 3px;
+    width: 50px;
+    font-weight: 300;
+    margin-left: 45%;
+}
+
+
+
+.footer p{
+    color: white;
+}
+
+.design{
+    float: right;
+    padding-right: 5%;
+}
+
+.rights{
+    float: left;
+}
+
+
+        </style>
+    </head>
+
+    <body class="page">
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            
+            <div class="container-fluid">
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                 <h2>ATTENDENCE</h2>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Easy EDU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="login.html" class="nav-item nav-link">My Account</a>
+                        <a href="services.html" class="nav-item nav-link active">Services</a>
+                        <a href="complaints.html" class="nav-item nav-link">Uploads</a>
+                        <a href="#" class="nav-item nav-link">#</a>
+                        <a href="#" class="nav-item nav-link">#</a>
+                        <a href="#" class="nav-item nav-link">#</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+     <!--attendence table start-->   
+<table class="attendance-table">
+<tbody><tr class="attendance-table-head">
+<th class="table-head-td-course">Course</th>
+<th class="table-head-td">Total Classes</th>
+<th class="table-head-td">Present</th>
+<th class="table-head-td">Absent</th>
+</tr>
+<tr class="attendanceRow">
+ 
+<td class="attendanceRowCourse">course 1</td>
+<td class="attendanceRowStat">12</td>
+<td class="attendanceRowStat">10</td>
+<td class="attendanceRowStat">2</td>
+<td class="attendanceRowStat">
+</td>
+</tr>
+<tr class="attendanceRow">
+ 
+<td class="attendanceRowCourse">course 2</td>
+<td class="attendanceRowStat">13</td>
+<td class="attendanceRowStat">9</td>
+<td class="attendanceRowStat">4</td>
+<td class="attendanceRowStat">
+</td>
+</tr>
+<tr class="attendanceRow">
+ 
+<td class="attendanceRowCourse">course 3</td>
+<td class="attendanceRowStat">10</td>
+<td class="attendanceRowStat">8</td>
+<td class="attendanceRowStat">2</td>
+<td class="attendanceRowStat">
+</td>
+</tr>
+<tr class="attendanceRow">
+ 
+<td class="attendanceRowCourse">course 4</td>
+<td class="attendanceRowStat">12</td>
+<td class="attendanceRowStat">11</td>
+<td class="attendanceRowStat">1</td>
+<td class="attendanceRowStat">
+</td>
+</tr>
+<tr class="attendanceRow">
+ 
+<td class="attendanceRowCourse">course 5</td>
+<td class="attendanceRowStat">13</td>
+<td class="attendanceRowStat">12</td>
+<td class="attendanceRowStat">1</td>
+<td class="attendanceRowStat">
+</td>
+</tr>
+<tr class="attendanceRow">
+ 
+<td class="attendanceRowCourse">course 6</td>
+<td class="attendanceRowStat">10</td>
+<td class="attendanceRowStat">8</td>
+<td class="attendanceRowStat">2</td>
+<td class="attendanceRowStat">
+</td>
+</tr>
+</tbody></table>
+</body>
+</html>
