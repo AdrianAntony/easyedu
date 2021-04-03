@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EasyEDU</title>
+        
+        <!-- Favicon -->
+        <link href="img/" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        
+
+        
+        
+
+        <style>
+            /********top bar style********/
+
+  .top-bar {
+    position: relative;
+    height: 35px;
+    background-image: linear-gradient(to right, #0796fe, #092a49);
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.top-bar .text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .15);
+    color: #eeeeee;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*************nav bar style***************/
+
+.navbar {
+    position:relative;
+    transition: .5s;
+    z-index: 999;
+    background-color: #092a49 !important;
+    text-transform: uppercase;
+}
+
+
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 200;
+    text-transform: none;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #0796fe;
+    transition: none;
+}
+
+
+
+/*************services style*************/
+
+.card{
+    min-width: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center; 
+    border: 1px solid rgba(0, 0, 0, .1);
+    float: left;
+    position: relative;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    transition: 0.3s;
+}
+
+.card:hover{
+    border-color: transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.card a:hover{
+     text-transform: none;
+     text-decoration: underline;
+}
+
+.card a{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.card img{
+    max-height: 50px;
+    margin-bottom: 20px;
+    max-width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.service{
+    padding-left: 15%;
+    margin-top: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    
+}
+
+.service h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+.card h3{
+    font-weight: 300;
+}
+
+
+
+/* footer style */
+
+.footer{
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+    background-color: #092a49;
+    width:100%;
+    text-align: center;
+    margin-bottom:0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.footer h2{
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-bottom:2px solid #0796fe;
+    border-bottom-width: 3px;
+    width: 50px;
+    font-weight: 300;
+    margin-left: 45%;
+}
+
+
+
+.footer p{
+    color: white;
+}
+
+.design{
+    float: right;
+    padding-right: 5%;
+}
+
+.rights{
+    float: left;
+}
+
+
+        </style>
+    </head>
+
+    <body class="page">
+        <!-- Top Bar Start -->
+        <div class="top-bar d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                
+                                <h2>Services</h2>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">EasyEDU</a>
+                
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">LOgin & registration</a>
+                        <a href="service.html" class="nav-item nav-link active">Service</a>
+                        <a href="feature.html" class="nav-item nav-link">about</a>
+                        <a href="advisor.html" class="nav-item nav-link">#</a>
+                        <a href="review.html" class="nav-item nav-link">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+
+        <!-- Service Start -->
+        <div class="service">
+            
+                <h6>Choose Your Task</h6>
+            
+                <h2>Our Best Services</h2>
+                 <div class="card">
+                    <img src="img/icon-4.png" alt="Icon">
+                    <h3>Student</h3>
+                    <p>Contains Student Activities</p>
+                    <a href="#">Student Dashboard</a>
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-4.png" alt="Icon">
+                    <h3>Faculty</h3>
+                    <p>Contains Faculty Activities</p>
+                    <a href="#">Faculty Dashboard</a>
+                
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-1.png" alt="Icon">
+                    <h3>Attendance</h3>
+                    <p>Uploadand View Attendance</p>
+                    <a href="#">Attendance</a>
+                
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-1.png" alt="Icon">
+                    <h3>Exams</h3>
+                    <p>Examination Details</p>
+                    <a href="#">Exam</a>
+                
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-1.png" alt="Icon">
+                    <h3>Assignments</h3>
+                    <p>Upload Assignments & Evaluation</p>
+                    <a href="#">Assignments</a>
+                
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-2.png" alt="Icon">
+                    <h3>Seminar & Projects</h3>
+                    <p>Seminar & Projects Details</p>
+                    <a href="#">Seminar & Projects</a>
+                
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-12.png" alt="Icon">
+                    <h3>Certificates</h3>
+                    <p>Uploadand Certificates</p>
+                    <a href="#">Certificates</a>
+                
+                 </div>
+
+                 <div class="card">
+                    <img src="img/icon-10.png" alt="Icon">
+                    <h3>Requests</h3>
+                    <p>Leave Request & Others</p>
+                    <a href="#">Requests</a>
+                
+                 </div>
+             
+
+        </div>
+        <!-- Service End -->
+
+
+        
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div>
+                <h2>Contact</h2>
+                
+                <p>8943111923</p>
+                <p>9446400905</p>
+                <p>8089509058</p>
+                <p>8137854416</p>
+                
+                
+            </div>
+            <div>
+                <div class="rights">
+                    <p>&copy; <a href="#">EasyEDU</a>, All Right Reserved.</p>
+                </div>
+                <div class="design">
+                    <p>Designed By <a href="#">Group 5</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <div class="footer">
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        
+    </body>
+</html>
