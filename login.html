@@ -76,6 +76,9 @@ a{
     text-align: center; 
     color: aliceblue;
 }  
+em {
+    color: white;
+}
         </style>
     </head>
 
@@ -147,7 +150,10 @@ a{
     <label><b>Password     
     </b>    
     </label>    
-    <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+    <input type="Password" name="Pass" id="Pass" placeholder="Password">  
+
+    <!-- An element to toggle between password visibility -->
+    <em>Show Password </em><input type="checkbox" onclick="passVisibility()">
     <br><br>    
     <input type="button" name="log" id="log" value="Log In Here">       
 
@@ -155,8 +161,21 @@ a{
      <a href="#">Forgot Password</a> 
      <br><br>    
      <a href="file:///home/adrian/Downloads/Telegram%20Desktop/easyedu/register.html#">Create new account</a>     
-</form>     
-    </body>
+</form>
+
+
+
+<script>
+    function passVisibility() {
+        var x = document.getElementById("Pass");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+</body>
 </html>
 
 
