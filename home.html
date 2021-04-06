@@ -163,23 +163,15 @@
     margin-right: 20px;
     border-radius: 5px;
 }
-
-.footer{
-    text-align: center; 
-    background-color: #092a49; 
-    color: white; 
-    font-weight: 200;
-}
-
-/* footer style */
+</style>
 
 
-        </style>
+
     </head>
 
-    <body>
+    <body class="page">
            <!-- Top Bar Start -->
-           <div class="top-bar d-md-block">
+           <div class="top-bar d-none d-md-block">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
@@ -192,11 +184,6 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="top-bar-right">
-                            
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -206,7 +193,9 @@
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">EasyEDU</a>
-                
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
